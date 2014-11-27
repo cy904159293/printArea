@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<head>
+    <title>printArea demo</title>
+    <link rel="stylesheet" type="text/css" href="printArea.css"></link>
+    <style>
+	.fs14 {
+		font-size: 14px;			
+	}
+	.fs24 {
+		font-size: 24px;	
+	}
+	.fs34 {
+		font-size: 34px;
+	}
+    </style>
+</head>
+
+
+<body>
+
+    <input type="button" id="btnPrint" value="打印"/>
+    <div class="print-content"><span class="fs14">要打印的内容区域1</span></div>
+    <div class="print-content"><span class="fs24">要打印的内容区域2</span></div>
+    <div class="print-content"><span class="fs34">要打印的内容区域3</span></div>
+    <div class="">要打印的内容区域4</div>
+    
+
+</body>
+<script type="text/javascript" src="jquery-1.8.3.js"></script>
+<script type="text/javascript" src="printArea.js"></script>
+<script>
+/* 测试 */
+$(function(){
+        $("#btnPrint").click(function(){ 
+            $(".print-content").printArea();
+        });
+});
+</script>
+
+</html>
